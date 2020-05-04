@@ -130,7 +130,9 @@ luci-app-firewall - git-20.125.38643-aef19bb
 luci-app-hd-idle - git-20.125.38643-aef19bb
 luci-app-nlbwmon - git-20.125.38643-aef19bb
 luci-app-opkg - git-20.125.38643-aef19bb
+luci-app-samba - git-20.125.38643-aef19bb
 luci-app-statistics - git-20.125.38643-aef19bb
+luci-app-upnp - git-20.125.38643-aef19bb
 luci-base - git-20.125.38643-aef19bb
 luci-compat - git-20.125.38643-aef19bb
 luci-lib-ip - git-20.125.38643-aef19bb
@@ -143,6 +145,7 @@ luci-mod-system - git-20.125.38643-aef19bb
 luci-proto-ipv6 - git-20.125.38643-aef19bb
 luci-proto-ppp - git-20.125.38643-aef19bb
 luci-theme-bootstrap - git-20.125.38643-aef19bb
+miniupnpd - 2.1.20191006-3
 mkf2fs - 1.13.0-1
 mtd - 25
 nano - 4.9.2-1
@@ -162,6 +165,7 @@ rpcd-mod-iwinfo - 2020-01-05-efe51f41-2
 rpcd-mod-luci - 20191114
 rpcd-mod-rrdns - 20170710
 rrdtool1 - 1.0.50-2
+samba36-server - 3.6.25-15
 terminfo - 6.2-1
 uboot-envtools - 2020.04-1
 ubox - 2019-12-31-0e34af14-3
