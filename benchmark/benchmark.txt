@@ -1,0 +1,62 @@
+//orangepi-r1-a7-h3
+OpenSSL 1.1.1g  21 Apr 2020
+built on: Thu Apr 30 19:51:12 2020 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: arm-openwrt-linux-muslgnueabi-gcc -fPIC -pthread -Wa,--noexecstack -Wall -O3 -Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -mfloat-abi=hard -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -fpic -ffunction-sections -fdata-sections -znow -zrelro -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -DOPENSSL_PREFER_CHACHA_OVER_GCM -DOPENSSL_SMALL_FOOTPRINT
+The 'numbers' are in 1000s of bytes per second processed.
+type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
+md5              13446.58k    37798.53k    74735.73k    98983.81k   109199.36k   110269.78k
+sha1              9593.71k    24185.69k    45983.17k    59047.59k    64585.29k    64886.10k
+des cbc           9264.19k     9653.76k     9770.24k     9807.45k     9803.09k     9797.63k
+des ede3          3297.63k     3359.13k     3372.12k     3372.71k     3377.83k     3380.57k
+aes-128 cbc      19599.78k    21764.65k    22590.63k    22628.35k    22659.07k    22653.61k
+aes-192 cbc      17204.59k    19013.50k    19587.68k    19661.82k    19701.76k    19682.72k
+aes-256 cbc      15226.00k    16640.94k    17030.40k    17129.13k    17159.51k    17164.97k
+sha256            6147.33k    14627.62k    26262.42k    32983.87k    35258.37k    35460.44k
+sha512            3338.76k    13414.55k    19969.02k    27737.77k    31411.80k    31577.43k
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.024425s 0.000537s     40.9   1862.7
+                  sign    verify    sign/s verify/s
+dsa 2048 bits 0.007115s 0.006329s    140.5    158.0
+
+//nanopi-r2s-a53-rk3328
+OpenSSL 1.1.1d  10 Sep 2019
+built on: Wed Jan 29 16:05:35 2020 UTC
+options:bn(64,64) rc4(char) des(int) aes(partial) blowfish(ptr)
+compiler: aarch64-openwrt-linux-musl-gcc -fPIC -pthread -Wa,--noexecstack -Wall -O3 -Wno-error=unused-but-set-variable -Wno-error=unused-result -O3 -ffunction-sections -fdata-sections -znow -zrelro -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -DOPENSSL_PREFER_CHACHA_OVER_GCM
+The 'numbers' are in 1000s of bytes per second processed.
+type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
+md5              24242.29k    62094.10k   115924.59k   147355.65k   161023.49k   161404.25k
+sha1             39890.92k   128469.00k   313655.89k   488730.62k   590621.28k   597316.95k
+des cbc          17481.45k    18159.02k    18389.67k    18511.11k    18464.77k    18459.31k
+des ede3          6376.74k     6498.50k     6505.98k     6515.03k     6537.16k     6515.37k
+aes-128 cbc      42294.77k    45653.38k    46788.86k    47117.31k    47205.03k    47349.21k
+aes-192 cbc      36992.44k    39407.77k    40510.42k    40632.32k    40692.39k    40681.47k
+aes-256 cbc      32977.09k    34774.38k    35636.91k    35710.29k    35752.62k    35869.45k
+sha256           42699.54k   135971.13k   317166.25k   474762.58k   560058.82k   565400.92k
+sha512           11729.32k    46715.22k    77386.33k   113153.71k   130304.68k   131732.82k
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.008446s 0.000227s    118.4   4402.9
+                  sign    verify    sign/s verify/s
+dsa 2048 bits 0.003080s 0.002902s    324.6    344.5
+
+//nanopi-neo2-a53-h5
+OpenSSL 1.1.1d  10 Sep 2019
+built on: Fri Dec 13 09:53:13 2019 UTC
+options:bn(64,64) rc4(char) des(int) aes(partial) blowfish(ptr)
+compiler: aarch64-openwrt-linux-musl-gcc -fPIC -pthread -Wa,--noexecstack -Wall -O3 -Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -fpic -ffunction-sections -fdata-sections -znow -zrelro -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -DOPENSSL_SMALL_FOOTPRINT
+The 'numbers' are in 1000s of bytes per second processed.
+type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
+md5              22386.44k    55942.49k   105124.99k   133912.92k   145943.21k   147039.55k
+sha1             37007.43k   118795.39k   296567.38k   469698.90k   567989.59k   578574.38k
+des cbc          15320.55k    16026.07k    16173.91k    16221.53k    16228.35k    16225.62k
+des ede3          5473.17k     5590.45k     5597.10k     5604.01k     5606.06k     5603.33k
+aes-128 cbc      30048.38k    32459.20k    33280.17k    33502.89k    33674.87k    33565.35k
+aes-192 cbc      26722.81k    28708.22k    29445.74k    29496.32k    29584.04k    29556.74k
+aes-256 cbc      24159.27k    25724.14k    26266.88k    26396.33k    26540.44k    26438.31k
+sha256           36398.38k   118383.19k   288408.58k   448578.22k   537493.50k   545155.75k
+sha512           11711.53k    46556.33k    76207.53k   109891.93k   126287.87k   127604.05k
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.008873s 0.000239s    112.7   4175.6
+                  sign    verify    sign/s verify/s
+dsa 2048 bits 0.003241s 0.002978s    308.5    335.8
