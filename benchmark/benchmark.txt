@@ -19,6 +19,27 @@ rsa 2048 bits 0.024425s 0.000537s     40.9   1862.7
                   sign    verify    sign/s verify/s
 dsa 2048 bits 0.007115s 0.006329s    140.5    158.0
 
+//nanopi-r1-a7-h3
+OpenSSL 1.1.1g  21 Apr 2020
+built on: Thu Apr 30 19:51:12 2020 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr)
+compiler: arm-openwrt-linux-muslgnueabi-gcc -fPIC -pthread -Wa,--noexecstack -Wall -O3 -Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -mfloat-abi=hard -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -fpic -ffunction-sections -fdata-sections -znow -zrelro -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -DOPENSSL_PREFER_CHACHA_OVER_GCM -DOPENSSL_SMALL_FOOTPRINT
+The 'numbers' are in 1000s of bytes per second processed.
+type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
+md5              13803.69k    37844.66k    74626.31k    98780.50k   109322.24k   110187.86k
+sha1              9662.47k    24232.21k    45884.16k    58929.83k    64492.14k    64897.02k
+des cbc           9255.82k     9687.50k     9762.82k     9818.76k     9803.09k     9797.63k
+des ede3          3282.78k     3343.55k     3371.30k     3378.52k     3383.65k     3375.10k
+aes-128 cbc      19678.74k    21995.53k    22476.89k    22623.23k    22669.99k    22659.07k
+aes-192 cbc      17332.82k    18847.89k    19439.88k    19742.51k    19649.88k    19660.80k
+aes-256 cbc      15211.55k    16626.11k    17094.44k    17182.58k    17145.86k    16689.83k
+sha256            5984.31k    14611.05k    26149.21k    32711.00k    35305.32k    35588.47k
+sha512            3308.30k    13263.59k    19937.71k    27732.99k    31309.82k    31577.43k
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.024472s 0.000537s     40.9   1861.2
+                  sign    verify    sign/s verify/s
+dsa 2048 bits 0.007136s 0.006362s    140.1    157.2
+
 //nanopi-r2s-a53-rk3328
 OpenSSL 1.1.1d  10 Sep 2019
 built on: Wed Jan 29 16:05:35 2020 UTC
