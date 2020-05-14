@@ -1,0 +1,10 @@
+sudo: required
+dist: bionic
+
+language: c
+
+install:
+ # Clone uboot-test-hooks
+ - cat /proc/cpuinfo
+ - cat /proc/meminfo
+ - df -h
