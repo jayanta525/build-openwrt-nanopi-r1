@@ -1,0 +1,787 @@
+Package: base-files
+Version: 220-r13221-462646482f
+Depends: libc, netifd, procd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+Source: package/base-files
+SourceName: base-files
+License: GPL-2.0
+Section: base
+Architecture: aarch64_generic
+Installed-Size: 40795
+Filename: base-files_220-r13221-462646482f_aarch64_generic.ipk
+Size: 41782
+SHA256sum: 4083896fe3111eee0ea8fbbae1802a1d4e23cbaa5d67253f7845fce9858d7e30
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: fstools
+Version: 2020-05-06-eec16e2f-1
+Depends: libc, ubox
+Source: package/system/fstools
+SourceName: fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: aarch64_generic
+Installed-Size: 17872
+Filename: fstools_2020-05-06-eec16e2f-1_aarch64_generic.ipk
+Size: 18611
+SHA256sum: f376e46cabd7233ea0ea7f015a4f123f1e06d62b85a5144c8416418f5199717b
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+Source: package/system/fwtool
+SourceName: fwtool
+License: GPL-2.0
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 4272
+Filename: fwtool_2019-11-12-8f7fe925-1_aarch64_generic.ipk
+Size: 5017
+SHA256sum: 61c92a3dbca2926ce261dc753baeb27670e0f29e4282eb97584c0993eb2fa4b7
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables
+Version: 1.8.4-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+SourceName: ip6tables
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_generic
+Installed-Size: 214
+Filename: ip6tables_1.8.4-1_aarch64_generic.ipk
+Size: 950
+SHA256sum: 09efc7ab7f4568f7d1c17349b6f88d31a7b54268a15fe3dc3ff05262aff037ec
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.8.4-1
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+Source: package/network/utils/iptables
+SourceName: iptables
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_generic
+Installed-Size: 26181
+Filename: iptables_1.8.4-1_aarch64_generic.ipk
+Size: 26946
+SHA256sum: 0fa4e1ace619603d001e802267d1d0999f9300f7dad0e605abb13745db4f716c
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: kmod-ac97
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-sound-core
+Source: package/kernel/linux
+SourceName: kmod-ac97
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 103
+Filename: kmod-ac97_5.4.29-1_aarch64_generic.ipk
+Size: 812
+SHA256sum: dd6a295c29cad215af061c584daf7bfa9145192f3cc2f85c0fad9cd0658c7408
+Description:  The ac97 controller
+
+Package: kmod-backlight
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-backlight
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 192
+Filename: kmod-backlight_5.4.29-1_aarch64_generic.ipk
+Size: 915
+SHA256sum: 8df1f92465384b90712306d6233304d2122720fff9d46dde22443aa3528e2a12
+Description:  Kernel module for Backlight support.
+
+Package: kmod-dma-buf
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-dma-buf
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 195
+Filename: kmod-dma-buf_5.4.29-1_aarch64_generic.ipk
+Size: 911
+SHA256sum: 5619e81f76824b6906c940a7cb0e9c1e9fbad4709cef5ad3aac7f466acab6a18
+Description:  DMA shared buffer support
+
+Package: kmod-drm-kms-helper
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-drm, kmod-fb, kmod-fb-sys-fops, kmod-fb-cfb-copyarea, kmod-fb-cfb-fillrect, kmod-fb-cfb-imgblt, kmod-fb-sys-ram
+Source: package/kernel/linux
+SourceName: kmod-drm-kms-helper
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 194
+Filename: kmod-drm-kms-helper_5.4.29-1_aarch64_generic.ipk
+Size: 960
+SHA256sum: bac5efd01fea9f88046c0ced0b32852c41b109b1da0c92277a3f7780a8334caf
+Description:  CRTC helpers for KMS drivers.
+
+Package: kmod-drm-rockchip-hdmi-sound
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-sound-soc-rockchip, kmod-drm-rockchip
+Source: package/kernel/linux
+SourceName: kmod-drm-rockchip-hdmi-sound
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 10940
+Filename: kmod-drm-rockchip-hdmi-sound_5.4.29-1_aarch64_generic.ipk
+Size: 11695
+SHA256sum: b29cf3853e1c8b3854ecf24e39d74f1cbdee63fc55f09457476948cb79795399
+Description:  Open-source reverse-engineered driver for Mali-4xx GPUs
+
+Package: kmod-drm-rockchip
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-backlight, kmod-drm-kms-helper, kmod-multimedia-input
+Source: package/kernel/linux
+SourceName: kmod-drm-rockchip
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 102155
+Filename: kmod-drm-rockchip_5.4.29-1_aarch64_generic.ipk
+Size: 102729
+SHA256sum: fe7113f17f31991c9b03817d410d72b44bbf19bc55a22fc60504314025351b7b
+Description:  Direct Rendering Manager (DRM) support for Rockchip
+
+Package: kmod-drm
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-dma-buf, kmod-i2c-core
+Source: package/kernel/linux
+SourceName: kmod-drm
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 181
+Filename: kmod-drm_5.4.29-1_aarch64_generic.ipk
+Size: 923
+SHA256sum: 190e6e641945f1e020c35a01af623e09acc569e269bd50780d7af158f29af1a9
+Description:  Direct Rendering Manager (DRM) core support
+
+Package: kmod-fb-cfb-copyarea
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-fb
+Source: package/kernel/linux
+SourceName: kmod-fb-cfb-copyarea
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 194
+Filename: kmod-fb-cfb-copyarea_5.4.29-1_aarch64_generic.ipk
+Size: 921
+SHA256sum: aaef3e0a551ac936808bf20278830094b242b57e5c336aa389f03a5b86bf7c09
+Description:  Kernel support for software copy area
+
+Package: kmod-fb-cfb-fillrect
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-fb
+Source: package/kernel/linux
+SourceName: kmod-fb-cfb-fillrect
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 195
+Filename: kmod-fb-cfb-fillrect_5.4.29-1_aarch64_generic.ipk
+Size: 934
+SHA256sum: 7b36af6f3ae97564eaf2ff30e402e46ab75f054c2ea93f51eafad804a3e61ba8
+Description:  Kernel support for software rectangle filling
+
+Package: kmod-fb-cfb-imgblt
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-fb
+Source: package/kernel/linux
+SourceName: kmod-fb-cfb-imgblt
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 192
+Filename: kmod-fb-cfb-imgblt_5.4.29-1_aarch64_generic.ipk
+Size: 924
+SHA256sum: 67791aaeb9c4906d137e52d07de1d876ef2027a8689a358452149275315b2828
+Description:  Kernel support for software image blitting
+
+Package: kmod-fb-sys-fops
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-fb
+Source: package/kernel/linux
+SourceName: kmod-fb-sys-fops
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 195
+Filename: kmod-fb-sys-fops_5.4.29-1_aarch64_generic.ipk
+Size: 923
+SHA256sum: ee2d1cd1c8c68fec33ce04ec5ade88eb834c54d3d35998267543771e2ef69f15
+Description:  Kernel support for framebuffer sys ops
+
+Package: kmod-fb-sys-ram
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-fb
+Source: package/kernel/linux
+SourceName: kmod-fb-sys-ram
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 212
+Filename: kmod-fb-sys-ram_5.4.29-1_aarch64_generic.ipk
+Size: 947
+SHA256sum: 42596e603fcfa6582fe6f9e27da47bf738b8f911528b200270ae116e88cfd6a0
+Description:  Kernel support for framebuffers in system RAM
+
+Package: kmod-fb
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-fb
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 185
+Filename: kmod-fb_5.4.29-1_aarch64_generic.ipk
+Size: 908
+SHA256sum: ed3a154b1c19d876af68361b13f4d11d0c04fc566ba1017051c35f58b2927a43
+Description:  Kernel support for framebuffers and framebuffer console.
+
+Package: kmod-i2c-core
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-i2c-core
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 192
+Filename: kmod-i2c-core_5.4.29-1_aarch64_generic.ipk
+Size: 911
+SHA256sum: 352de7189233d2b13f51a7ae593becba6f4c7341a63b7c5c9b35f5993c56f126
+Description:  Kernel modules for I2C support
+
+Package: kmod-input-core
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 103
+Filename: kmod-input-core_5.4.29-1_aarch64_generic.ipk
+Size: 824
+SHA256sum: 7705ff06826f08fc4dfa24c1a41ca49f65ef49109b9c95b887b93dc1b7649659
+Description:  Kernel modules for support of input device
+
+Package: kmod-ip6tables
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ip6tables
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 7243
+Filename: kmod-ip6tables_5.4.29-1_aarch64_generic.ipk
+Size: 8023
+SHA256sum: f541c1d9f3984b41c4293899f0dde0424c7d6ac0336e8444f53f56eb350909c5
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 3137
+Filename: kmod-ipt-conntrack_5.4.29-1_aarch64_generic.ipk
+Size: 3937
+SHA256sum: a64ffc3249776ebc780880df6b932b70a78f52f6fb25e782d41bb2749b371fd0
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-nf-reject, kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 19234
+Filename: kmod-ipt-core_5.4.29-1_aarch64_generic.ipk
+Size: 19988
+SHA256sum: 90e63fdefdfb5bf328d488237c1586a9626ebd437a9d42e28bd1b3001b43aa76
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-ipt-nat
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 4932
+Filename: kmod-ipt-nat_5.4.29-1_aarch64_generic.ipk
+Size: 5660
+SHA256sum: a45eded932e30fe427f562f060f2647b0bdb78196d423374b96e9bd4928f24cd
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-ipt-core, kmod-nf-flow
+Source: package/kernel/linux
+SourceName: kmod-ipt-offload
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 3866
+Filename: kmod-ipt-offload_5.4.29-1_aarch64_generic.ipk
+Size: 4609
+SHA256sum: 873ac4a60aa72e43f1a931ba318e71a7a060d9f91e1ea70c0690bd012683baa3
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-lib-crc-ccitt
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 2237
+Filename: kmod-lib-crc-ccitt_5.4.29-1_aarch64_generic.ipk
+Size: 2961
+SHA256sum: dfb6297a76757bc61c40f31e9b672934c76fc37bf38cb496f4762f59779d9750
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-multimedia-input
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-multimedia-input
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 21305
+Filename: kmod-multimedia-input_5.4.29-1_aarch64_generic.ipk
+Size: 22010
+SHA256sum: 8b329e7f8dede4653ae473a80e9513dbcf170ea6bb5a2b6d04da5eda45793cb9
+Description:  Enable multimedia input.
+
+Package: kmod-nf-conntrack6
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack6
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 103
+Filename: kmod-nf-conntrack6_5.4.29-1_aarch64_generic.ipk
+Size: 827
+SHA256sum: b1bc83e9099b43e4db917a21c9850e4e2ce112655a15499371a6d1092df2eda7
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 56099
+Filename: kmod-nf-conntrack_5.4.29-1_aarch64_generic.ipk
+Size: 56589
+SHA256sum: e67791fa2000ec58b2f02cefa4510688fa8bf34b6a9235f00c384f4e74e5bea3
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 14778
+Filename: kmod-nf-flow_5.4.29-1_aarch64_generic.ipk
+Size: 15454
+SHA256sum: def7ddb51f5796bab4398cdf8fc5d9f5d74bd692ff298625a68fe010f54652cf
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt6
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 13204
+Filename: kmod-nf-ipt6_5.4.29-1_aarch64_generic.ipk
+Size: 13895
+SHA256sum: c958d956e2125d239e4f0f2e11d00c91450acc2f33e2d9b9922c6fab9cbbda9f
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 27871
+Filename: kmod-nf-ipt_5.4.29-1_aarch64_generic.ipk
+Size: 28534
+SHA256sum: 0e93a53933b76984e3cc9ca219e806ff6218ea2bb9867305c0ece10759d1ddb7
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 14975
+Filename: kmod-nf-nat_5.4.29-1_aarch64_generic.ipk
+Size: 15676
+SHA256sum: 8a35c60a6f6434245673de319a0238a46b41b89d603b02be085044f6b7739eb7
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject6
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 2668
+Filename: kmod-nf-reject6_5.4.29-1_aarch64_generic.ipk
+Size: 3396
+SHA256sum: 47f94bec032dfc7b4dc1337d86c1cf8526f3d7380e29d15ed6fb48b9e3c7cf56
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 2425
+Filename: kmod-nf-reject_5.4.29-1_aarch64_generic.ipk
+Size: 3134
+SHA256sum: 2a114546306e8ab51ba9429b31fb21f882aac38c8b3ab0864cd31222696ca419
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-ppp
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+SourceName: kmod-ppp
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 28617
+Filename: kmod-ppp_5.4.29-1_aarch64_generic.ipk
+Size: 29363
+SHA256sum: f1ca5c8a4c8d3e6c49f46e9ef49e7afba13f62ba82fa99bf5a5fa3d044704f6b
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+SourceName: kmod-pppoe
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 8892
+Filename: kmod-pppoe_5.4.29-1_aarch64_generic.ipk
+Size: 9619
+SHA256sum: d6b436105212319e3ad20bdcccc7795c0e63a8d3d777bd1453baf317581fb109
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-ppp
+Source: package/kernel/linux
+SourceName: kmod-pppox
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 2416
+Filename: kmod-pppox_5.4.29-1_aarch64_generic.ipk
+Size: 3144
+SHA256sum: 47351e71c19937b07f7f5dc48fdab30e95d4247fd2d9853b6e2c8367fecad046
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-regmap-core
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e)
+Source: package/kernel/linux
+SourceName: kmod-regmap-core
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 103
+Filename: kmod-regmap-core_5.4.29-1_aarch64_generic.ipk
+Size: 819
+SHA256sum: be760f87bffb987522d34ee7d8372d77e2783de70029633b4a515ba16645401f
+Description:  Generic register map support
+
+Package: kmod-slhc
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+SourceName: kmod-slhc
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 4252
+Filename: kmod-slhc_5.4.29-1_aarch64_generic.ipk
+Size: 4978
+SHA256sum: f39d6feec97ae27a5db17b53e0ac46d4e749a893c9f2a8c34713d8a25cf87349
+Description:  Serial Line Header Compression
+
+Package: kmod-sound-core
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-input-core
+Source: package/kernel/linux
+SourceName: kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 142202
+Filename: kmod-sound-core_5.4.29-1_aarch64_generic.ipk
+Size: 142504
+SHA256sum: a03298dbd49d4e271372ef0b44ba6361fd013c62f5fe738e62478ecb220536ba
+Description:  Kernel modules for sound support
+
+Package: kmod-sound-soc-core
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-regmap-core, kmod-ac97, kmod-sound-core
+Source: package/kernel/linux
+SourceName: kmod-sound-soc-core
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 70906
+Filename: kmod-sound-soc-core_5.4.29-1_aarch64_generic.ipk
+Size: 71469
+SHA256sum: 4ca861ec81c30f8d81e9bb615bcc22258446a5522c496638358e5e9c30fd3932
+Description:  SoC sound support
+
+Package: kmod-sound-soc-rockchip
+Version: 5.4.29-1
+Depends: kernel (=5.4.29-1-fc1fb78ad32d26b1901a206d3fd3994e), kmod-sound-soc-core, kmod-sound-core, kmod-sound-core
+Source: package/kernel/linux
+SourceName: kmod-sound-soc-rockchip
+License: GPL-2.0
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 22530
+Filename: kmod-sound-soc-rockchip_5.4.29-1_aarch64_generic.ipk
+Size: 23224
+SHA256sum: a73e01505d590bbeb2183a10fc7631ca3348273a97f1e9d912268e4c24dd1aed
+Description:  Support for Rockchip Platform sound (pdm/pcm/spdif)
+
+Package: libgcc1
+Version: 8.4.0-2
+Provides: libgcc
+Source: package/libs/toolchain
+SourceName: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 35324
+Filename: libgcc1_8.4.0-2_aarch64_generic.ipk
+Size: 36122
+SHA256sum: 71eab259d360b02f768a0d904a981587bad61d609b1fd47421ebb98ffb18fbf4
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.4-1
+Depends: libc, libxtables12
+Provides: libip4tc
+Source: package/network/utils/iptables
+SourceName: libip4tc
+License: GPL-2.0
+Section: libs
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_generic
+Installed-Size: 22786
+Filename: libip4tc2_1.8.4-1_aarch64_generic.ipk
+Size: 23478
+SHA256sum: 10925443a981df09f110498dcee72cb263b9b7d4f0b51e360f339c65bce0cd43
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.4-1
+Depends: libc, libxtables12
+Provides: libip6tc
+Source: package/network/utils/iptables
+SourceName: libip6tc
+License: GPL-2.0
+Section: libs
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_generic
+Installed-Size: 22558
+Filename: libip6tc2_1.8.4-1_aarch64_generic.ipk
+Size: 23264
+SHA256sum: 35c47ccc4a97a1798a9351579e17485aa894b318f380cde8f4f70e586d45fc1f
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libpthread
+Version: 1.1.24-2
+Depends: libgcc1
+Source: package/libs/toolchain
+SourceName: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 125
+Filename: libpthread_1.1.24-2_aarch64_generic.ipk
+Size: 880
+SHA256sum: 1ad45ee60141a451a06582fb1131d87b3cf7c02111d423709c06dcd31517dbc2
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-2
+Depends: libpthread
+Source: package/libs/toolchain
+SourceName: librt
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 125
+Filename: librt_1.1.24-2_aarch64_generic.ipk
+Size: 892
+SHA256sum: 151bab3ca5ece15d6d07b79e468b5719c4c9da7be91b943ee00dde7d2181869e
+Description:  POSIX.1b RealTime extension library
+
+Package: libxtables12
+Version: 1.8.4-1
+Depends: libc
+Provides: libxtables
+Source: package/network/utils/iptables
+SourceName: libxtables
+License: GPL-2.0
+Section: libs
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_generic
+Installed-Size: 48904
+Filename: libxtables12_1.8.4-1_aarch64_generic.ipk
+Size: 49710
+SHA256sum: 329b2c071f9837cb47dcd55289ff4a9e0c4053d14027b4239c75070643daedda
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 25
+Depends: libc, libubox20191228
+Source: package/system/mtd
+SourceName: mtd
+License: GPL-2.0+
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 10450
+Filename: mtd_25_aarch64_generic.ipk
+Size: 11180
+SHA256sum: 4a3d563d5691f573eede2393e9d4e5147a42d1a2ad62c2e5ea30b085970ca178
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: uboot-envtools
+Version: 2020.04-1
+Depends: libc
+Source: package/boot/uboot-envtools
+SourceName: uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 13925
+Filename: uboot-envtools_2020.04-1_aarch64_generic.ipk
+Size: 14634
+SHA256sum: 9701add5990866b7a2da76a0d96e67f60f9d69c3fd0924db428982d7dace0948
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
